@@ -25,5 +25,8 @@
       Revert back to when test was passing and start refactoring again. Its better to run test
       after every small change to identify which step broke the test.
  
- - Step 2: Rename variables in Customer class. `Each` in for loop is renamed to rental. 
+ - Step 2: Rename variables in Customer class. `Each` in for loop is renamed to rental.
+ - Step 3: `statement` function is doing too many things. It is calculating amount for movie, total amount, frequentRentersPoint and totalRenterPoints.
+       The idea is start extracting functions from statement method that has single responsibility.
+       Move amount for Rental into a new method.
   
