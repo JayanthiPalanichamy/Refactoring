@@ -34,4 +34,5 @@
      - To remove Feature envy, we are moving the method to rental class. One of the tests to check for feature
      envy is change the function to static and run the tests. If its passes, it should be moved to 
      appropriate class. Note: Feature envy can be present even if static test fails.
+ - Step 5: Similarly extract frequentRenterPoints and move it rental to remove feature envy.
   
