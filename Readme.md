@@ -24,4 +24,6 @@
       `Test -> Refactor -> Test`  If the test fails after refactoring, Never fix the test. 
       Revert back to when test was passing and start refactoring again. Its better to run test
       after every small change to identify which step broke the test.
-
+ 
+ - Step 2: Rename variables in Customer class. `Each` in for loop is renamed to rental. 
+  
