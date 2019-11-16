@@ -36,4 +36,5 @@
      appropriate class. Note: Feature envy can be present even if static test fails.
  - Step 5: Similarly extract frequentRenterPoints and move it rental to remove feature envy.
  - Step 6: Remove Inline variable and declaration in `frequentRenterPointsFor` method.
+ - Step 7: Extract totalAmount and totalFrequentRenterPoints and Remove inline variables. 
   
