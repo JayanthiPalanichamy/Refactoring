@@ -23,10 +23,10 @@ public class Customer {
     String result = "Rental Record for " + getName() + "\n";
     for (Rental rental : rentals) {
       result += "\t" + rental.getMovie().getTitle() + "\t" +
-          String.valueOf(rental.amountFor()) + "\n";
+              rental.amountFor() + "\n";
     }
-    result += "Amount owed is " + String.valueOf(totalAmount()) + "\n";
-    result += "You earned " + String.valueOf(totalFrequentRenterPoints())
+    result += "Amount owed is " + totalAmount() + "\n";
+    result += "You earned " + totalFrequentRenterPoints()
         + " frequent renter points";
     return result;
   }
@@ -52,10 +52,10 @@ public class Customer {
     String result = "<h1>Rental Record for <b>" + getName() + "</b></h1>";
     for (Rental rental : rentals) {
       result += "<p>" + rental.getMovie().getTitle() + " " +
-              String.valueOf(rental.amountFor()) + "</p>";
+              rental.amountFor() + "</p>";
     }
-    result += "<p>Amount owed is <b>" + String.valueOf(totalAmount()) + "</b></p>";
-    result += "<p>You earned " + String.valueOf(totalFrequentRenterPoints())
+    result += "<p>Amount owed is <b>" + totalAmount() + "</b></p>";
+    result += "<p>You earned " + totalFrequentRenterPoints()
             + " frequent renter points</p>";
     return result;
   }

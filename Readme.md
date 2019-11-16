@@ -39,5 +39,5 @@
  - Step 7: Extract totalAmount and totalFrequentRenterPoints and Remove inline variables.
  - Step 8: Now all the values are decoupled, we can add htmlStatement functionality. Now the functionality is done. Should we stop refactoring,
  it looks like there is still a lot of improvement in code.
- 
+ - Step 9: We don't really `String.valueOf`, java interpolates strings on its own. Remove unnecessary methods.
   
