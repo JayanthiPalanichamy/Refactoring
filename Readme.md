@@ -29,4 +29,9 @@
  - Step 3: `statement` function is doing too many things. It is calculating amount for movie, total amount, frequentRentersPoint and totalRenterPoints.
        The idea is start extracting functions from statement method that has single responsibility.
        Move amount for Rental into a new method.
+ - Step 4: `amountFor` method is performing operations on fields of Rental class. This code smell is called Feature envy.
+     - Feature Envy: Feature envy is a term used to describe a situation in which one object gets at the fields of another object in order to perform some sort of computation or make a decision, rather than asking the object to do the computation itself. 
+     - To remove Feature envy, we are moving the method to rental class. One of the tests to check for feature
+     envy is change the function to static and run the tests. If its passes, it should be moved to 
+     appropriate class. Note: Feature envy can be present even if static test fails.
   
