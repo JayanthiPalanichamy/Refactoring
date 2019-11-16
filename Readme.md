@@ -40,4 +40,8 @@
  - Step 8: Now all the values are decoupled, we can add htmlStatement functionality. Now the functionality is done. Should we stop refactoring,
  it looks like there is still a lot of improvement in code.
  - Step 9: We don't really `String.valueOf`, java interpolates strings on its own. Remove unnecessary methods.
+ - Step 10: We know that customer is not responsible for generating statements. So Lets extract classes which does it.
+ Lets create inner class out of the functionality. To decouple inner class from outer class, copy the methods and extract out arguments and move the class outside.
+ Remove unused methods( totalAmount and totalFrequentRentersPoints) from Customer class.
+
   
