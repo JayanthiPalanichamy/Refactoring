@@ -55,6 +55,8 @@
  fields of movie class. This is feature envy, we can move the amount calculation to movie class. Do the similar thing for frequentRenter points.
  - Step 2: Amount calculation is still performed at movie class, it does calculation based on price code. This is
  great place to introduce sub class behaviours based on price code.
+ - Step 3: we see we introduced a new bug, when no proper code is given, we got amount as null, now we get null.
+ To remove this error, we introduce a default object for incorrect error code.
    
 
   

@@ -28,6 +28,11 @@ public class Movie {
       case CHILDRENS:
         this.priceCode = new ChildrenPriceCode();
         break;
+
+      default:
+        this.priceCode = new UnknownPriceCodeType(priceCode);
+        break;
+
     }
 
   }
