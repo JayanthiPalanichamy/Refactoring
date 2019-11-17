@@ -43,7 +43,16 @@
  - Step 10: We know that customer is not responsible for generating statements. So Lets extract classes which does it.
  Lets create inner class out of the functionality. To decouple inner class from outer class, copy the methods and extract out arguments and move the class outside.
  Remove unused methods( totalAmount and totalFrequentRentersPoints) from Customer class. 
- - Step 11: We see that now html statement and text statement both calculating total amount and total frequent renter points. Its not resposibility of statement  
- to calculate this. We can extract out List of rentals as an object.
+ - Step 11: We see that now html statement and text statement both calculating total amount and total frequent renter points. Its not responsibility of statement  
+ to calculate this. We can extract out List of rentals as an object. We can see there are other refactorings possible, but for the given problem statement, we fixed most of the code we touched.
+ Its important to know when to stop refactoring. Otherwise you will end up spending your entire time refactoring instead of working on new features.
+ 
+ ### Problem Statement 1:
+   We want to support new type of movie (YA_MOVIE),
+   the rental cost of YA Movie/ per day is 4.0
+   
+ - Step 1: We see that Rental class can be refactored before adding new feature. So we start refactoring the rental class. getAmount method works on the 
+ fields of movie class. This is feature envy, we can move the amount calculation to movie class. Do the similar thing for frequentRenter points.
+   
 
   
