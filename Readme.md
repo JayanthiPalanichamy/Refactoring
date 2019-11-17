@@ -42,6 +42,8 @@
  - Step 9: We don't really `String.valueOf`, java interpolates strings on its own. Remove unnecessary methods.
  - Step 10: We know that customer is not responsible for generating statements. So Lets extract classes which does it.
  Lets create inner class out of the functionality. To decouple inner class from outer class, copy the methods and extract out arguments and move the class outside.
- Remove unused methods( totalAmount and totalFrequentRentersPoints) from Customer class.
+ Remove unused methods( totalAmount and totalFrequentRentersPoints) from Customer class. 
+ - Step 11: We see that now html statement and text statement both calculating total amount and total frequent renter points. Its not resposibility of statement  
+ to calculate this. We can extract out List of rentals as an object.
 
   
