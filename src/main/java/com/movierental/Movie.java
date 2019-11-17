@@ -4,6 +4,7 @@ public class Movie {
   public static final int CHILDRENS = 2;
   public static final int REGULAR = 0;
   public static final int NEW_RELEASE = 1;
+  public static final int YA_MOVIE = 3;
 
   private String title;
   private PriceCode priceCode;
@@ -28,7 +29,9 @@ public class Movie {
       case CHILDRENS:
         this.priceCode = new ChildrenPriceCode();
         break;
-
+      case YA_MOVIE:
+        this.priceCode = new YAPriceCode();
+        break;
       default:
         this.priceCode = new UnknownPriceCodeType(priceCode);
         break;
