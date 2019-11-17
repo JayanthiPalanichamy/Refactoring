@@ -3,7 +3,7 @@ package com.movierental;
 public class ChildrenPriceCode extends PriceCode {
     @Override
     int value() {
-        return 2;
+        return Movie.CHILDRENS;
     }
 
     @Override

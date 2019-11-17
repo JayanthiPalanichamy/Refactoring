@@ -3,7 +3,7 @@ package com.movierental;
 public class YAPriceCode extends PriceCode {
     @Override
     int value() {
-        return 3;
+        return Movie.YA_MOVIE;
     }
 
     @Override

@@ -4,7 +4,7 @@ public class NewReleasePriceCode extends PriceCode {
 
     @Override
     int value() {
-        return 1;
+        return Movie.NEW_RELEASE;
     }
 
     @Override

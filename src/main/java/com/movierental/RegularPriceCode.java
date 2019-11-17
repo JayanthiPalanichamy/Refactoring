@@ -3,7 +3,7 @@ package com.movierental;
 public class RegularPriceCode extends PriceCode {
     @Override
     int value() {
-        return 0;
+        return Movie.REGULAR;
     }
 
     @Override
