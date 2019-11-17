@@ -53,6 +53,8 @@
    
  - Step 1: We see that Rental class can be refactored before adding new feature. So we start refactoring the rental class. getAmount method works on the 
  fields of movie class. This is feature envy, we can move the amount calculation to movie class. Do the similar thing for frequentRenter points.
+ - Step 2: Amount calculation is still performed at movie class, it does calculation based on price code. This is
+ great place to introduce sub class behaviours based on price code.
    
 
   
